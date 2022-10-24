@@ -97,7 +97,7 @@ class Block(Layer):
         # print('y shape: {}'.format(y.shape))
         return y
 
-% Writing the Function for Transformer Encoder
+# Writing the Function for Transformer Encoder
 class TransformerEncoder(Layer):
     def __init__(self, projection_dim, num_heads=4, num_blocks=12, dropout_rate=0.1):
         super(TransformerEncoder, self).__init__()
