@@ -48,7 +48,7 @@ def generate_iterator(path, augmentation = True, color_mode = 'rgb',
     Iterator = Generator.flow_from_directory(directory = path, target_size=target_size,
                                              color_mode='rgb', batch_size=batch_size,
                                              shuffle=shuffle, seed=None, interpolation='bilinear',
-                                             class_mode = 'sparse')
+                                             class_mode = 'categorical')
     return Iterator
 
 
