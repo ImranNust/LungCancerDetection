@@ -109,11 +109,11 @@ def CustomAccuracy(y_true, y_pred):
     TN= records[9]+records[10]+records[11]
     
     # Accuracy for Class 0
-    Acc0 = (records[0]+records[9])/(records[0]+records[3]+records[6]+records[9])
+    Acc0 = (records[0]+records[9])/(records[0]+records[3]+records[6]+records[9]+K.epsilon())
     # Accuracy for Class 1
-    Acc1 = (records[1]+records[10])/(records[1]+records[4]+records[7]+records[10])
+    Acc1 = (records[1]+records[10])/(records[1]+records[4]+records[7]+records[10]+K.epsilon())
     # Accuracy for Class 2
-    Acc2 = (records[2]+records[11])/(records[2]+records[5]+records[8]+records[11])
+    Acc2 = (records[2]+records[11])/(records[2]+records[5]+records[8]+records[11]+K.epsilon())
     
     # This is the formula for weighted or micro average accuracy
     accuracy = (TP+ TN) / (TP+TN+FP+FN)
@@ -160,11 +160,11 @@ def CustomPrecision(y_true, y_pred):
     TN= records[9]+records[10]+records[11]
     
     # Precision for Class 0
-    Precision0 = (records[0])/(records[0]+records[6])
+    Precision0 = (records[0])/(records[0]+records[6]+K.epsilon())
     # Precision for Class 1
-    Precision1 = (records[1])/(records[1]+records[7])
+    Precision1 = (records[1])/(records[1]+records[7]+K.epsilon())
     # Precision for Class 2
-    Precision2 = (records[2])/(records[2]+records[8])
+    Precision2 = (records[2])/(records[2]+records[8]+K.epsilon())
     
 
     # This is the formula for weighted or micro average precision
@@ -214,11 +214,11 @@ def CustomRecall(y_true, y_pred):
     TN= records[9]+records[10]+records[11]
 
     # Recall for Class 0
-    Recall0 = (records[0])/(records[0]+records[3])
+    Recall0 = (records[0])/(records[0]+records[3]+K.epsilon())
     # Recall for Class 1
-    Recall1 = (records[1])/(records[1]+records[4])
+    Recall1 = (records[1])/(records[1]+records[4]+K.epsilon())
     # Recall for Class 2
-    Recall2 = (records[2])/(records[2]+records[5])
+    Recall2 = (records[2])/(records[2]+records[5]+K.epsilon())
 
     # This is the formula for weighted or micro average recall
     recall = TP / (TP+FN)
@@ -267,11 +267,11 @@ def CustomSpecificity(y_true, y_pred):
     TN= records[9]+records[10]+records[11]
 
     # Specificity for Class 0
-    Specificity0 = (records[9])/(records[9]+records[6])
+    Specificity0 = (records[9])/(records[9]+records[6]+K.epsilon())
     # Specificity for Class 1
-    Specificity1 = (records[10])/(records[10]+records[7])
+    Specificity1 = (records[10])/(records[10]+records[7]+K.epsilon())
     # Specificity for Class 2
-    Specificity2 = (records[11])/(records[11]+records[8])
+    Specificity2 = (records[11])/(records[11]+records[8]+K.epsilon())
     
 
     # This is the formula for weighted or micro average specificity
