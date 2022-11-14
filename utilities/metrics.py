@@ -45,7 +45,7 @@ def CustomConfusionMatrix(y_true, y_pred):
     # one-hot encoded
     y_true = tf.argmax(y_true, axis = 1)
     y_pred = tf.argmax(y_pred, axis = 1)
-    CM = tf.cast(confusion_matrix(y_true, y_pred), tf.float32)
+    CM = tf.cast(confusion_matrix(y_true, y_pred, labels = [0, 1, 2] ), tf.float32)
     # print(y_true, y_pred)
     # TP Class 0, Class 1 and Class 2
     TP0 = CM[0][0]
