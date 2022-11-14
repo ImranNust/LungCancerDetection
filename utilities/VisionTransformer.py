@@ -163,4 +163,4 @@ class TransformerEncoder(Layer):
         # print('x shape {} after iteration {}'.format(x.shape, block))
         x = self.norm(x)
         y = self.dropout(x)
-        # return y
+        return y
