@@ -24,7 +24,7 @@ def plot_metrics(history_file):
       12.  val_loss: This indicates the loss of Validation Data
       
     """
-    history = pd.read_csv('history.csv')
+    history = pd.read_csv('history_file.csv')
     plt.figure(figsize = (14, 14))
     plt.subplot(2, 3, 1)
     plt.plot(history.epoch.tolist(), history.CustomAccuracy.tolist(), color='blue', linestyle = 'dashdot', label='Train')
