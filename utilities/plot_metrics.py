@@ -24,7 +24,7 @@ def plot_metrics(history_file):
       12.  val_loss: This indicates the loss of Validation Data
       
     """
-    history = pd.read_csv('history_file.csv')
+    history = pd.read_csv(history_file)
     plt.figure(figsize = (14, 14))
     plt.subplot(2, 3, 1)
     plt.plot(history.epoch.tolist(), history.CustomAccuracy.tolist(), color='blue', linestyle = 'dashdot', label='Train')
@@ -126,5 +126,6 @@ def plot_roc(y_test, y_score, n_classes):
     plt.grid(visible = True, which = 'both', color= 'r', linestyle = 'dotted')
     plt.title("AUC-ROC Curve")
     plt.legend(loc="best")
+    plt.savefig('AUCROCCurve.png', dpi = 900)
     plt.show()
     return
