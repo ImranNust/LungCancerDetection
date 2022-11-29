@@ -6,3 +6,12 @@ The second most prevalent cancer in the world, lung cancer, leads to all other c
 <p align="center">
   <img src="https://github.com/ImranNust/LungCancerDetection/blob/main/images/NSCLCTypes.png" />
 </p>
+
+<hr></hr>
+
+Our proposed architecture leaverages the capabilities of convolutional neural network and vision transformers by combining them in an effective manner, as shown below.
+
+<p align="center">
+  <img src="https://github.com/ImranNust/LungCancerDetection/blob/main/images/MainModelVer6.png" />
+</p>
+
