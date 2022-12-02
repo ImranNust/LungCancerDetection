@@ -38,9 +38,9 @@ To test and validate our findings, you can just use the [TestingTheFinalModel](h
 <hr></hr>
 <h2 align="center" > Dataset </h2>
 
-<p align='justify'>
+
 
 For training, testing, validating, and comparison, we used the [LC25000 LUNG AND COLON HISTOPATHOLOGICAL IMAGE DATASET](https://github.com/tampapath/lung_colon_image_set). The dataset contains histopathological images for lung and colon cancers. Sincer, we are concerned with lung cancer; therefore, here we will talk about it only. There are three subfolders for lung cancer: lung_aca subfolder with 5000 images of lung adenocarcinomas, lung_scc subfolder with 5000 images of lung squamous cell carcinomas, and lung_n subfolder with 5000 images of benign lung tissues.
 
- </p>
+ 
 
