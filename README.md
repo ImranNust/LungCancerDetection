@@ -24,7 +24,7 @@ If you want to use our proposed model for training your own dataset, you can use
 
 1. We have defined custom layers for patch extraction, patch encoding, metrics, and a few others. All our custom layers are static; that is, they would work for pre-defined batch size. Therefore, you should keep the batch size either 32 or 16. If you want to use other values, you need to modify our code accordingly.
 2. We designed our network for images of sizes $256\times256\times3$; however, if you want different sizes, you need to alter our code accordingly and so the patch sizes and other parameters.
-3. Our custom metrics functions accept to recieve all three types of classes as inputs; therefore, you need to keep the 'shuffle' parameter true, while generating the train or test iterators for training or testing. 
+3. Our custom metrics functions expect to recieve all three types of classes as inputs; therefore, you need to keep the 'shuffle' parameter true, while generating the train or test iterators for training or testing. 
 4. Moreover, for evaluation and prediction, you have to keep the batch size equal to 32. 
 
 </p>
