@@ -1,5 +1,8 @@
 <h1 align="center" > Transformer Based Hierarchical Model for Non-Small Cell Lung Cancer Detection & Classification </h1>
 
+**Disclaimer:** <u>Please note that the code was originally written and tested in 2022, and as of 2024, various updates and changes have occurred in TensorFlow and other dependencies. As a result, running the code in its current form may lead to errors. To avoid issues, you can either install the dependencies specified in the `requirements.txt` file using the listed versions or update the code to work with the latest versions of the dependencies. We apologize for any inconvenience this may cause.</u>
+
+
 <p align='justify'>
 The second most prevalent cancer in the world, lung cancer, leads to all other cancers in terms of mortality. The delay in diagnosis, which affects the prognosis and therapy, is one of the leading causes of lung cancer deaths. In order to help pathologists, researchers suggest artificial intelligence-based approaches. We have also attempted to contribute to this noble cause by putting up a unique model for identifying and categorizing non-small cell lung cancer, which is the most prevalent cancer among the other lung cancer types. Our proposed model can detect and classify three types of NSCLC: normal, adenocarcinoma, and squamous cell carcinoma. </p>
 
