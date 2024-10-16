@@ -45,5 +45,22 @@ To test and validate our findings, you can just use the [TestingTheFinalModel](h
 
 For training, testing, validating, and comparison, we used the [LC25000 LUNG AND COLON HISTOPATHOLOGICAL IMAGE DATASET](https://github.com/tampapath/lung_colon_image_set). The dataset contains histopathological images for lung and colon cancers. Sincer, we are concerned with lung cancer; therefore, here we will talk about it only. There are three subfolders for lung cancer: lung_aca subfolder with 5000 images of lung adenocarcinomas, lung_scc subfolder with 5000 images of lung squamous cell carcinomas, and lung_n subfolder with 5000 images of benign lung tissues.
 
- 
+<hr></hr>
+<h2 align="center" > Citation </h2>
+
+
+If you find our code or paper useful, please cite the following research article:
+
+```bibtex
+@ARTICLE{10643966,
+  author={Imran, Muhammad and Haq, Bushra and Elbasi, Ersin and Topcu, Ahmet E. and Shao, Wei},
+  journal={IEEE Access}, 
+  title={Transformer-Based Hierarchical Model for Non-Small Cell Lung Cancer Detection and Classification}, 
+  year={2024},
+  volume={12},
+  number={},
+  pages={145920-145933},
+  keywords={Lung cancer;Computer architecture;Microprocessors;Computed tomography;Accuracy;Lung;Convolutional neural networks;Squamous cell carcinoma;Classification algorithms;Non-small cell lung cancer;neural network;vision transformers;convolutional neural networks;classification;adenocarcinoma;squamous cell carcinoma},
+  doi={10.1109/ACCESS.2024.3449230}}
+```
 
